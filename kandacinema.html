@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>神田シネマ｜社会問題を、映画から考える</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="sections.css">
+<script src="image-slot.js"></script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="神田シネマ KANDA CINEMA">
+    <img class="brand-logo" src="assets/kanda-cinema-logo-cream.png" alt="神田シネマ KANDA CINEMA">
+  </a>
+  <div class="navlinks">
+    <a href="#about">上映について</a>
+    <a href="#next">次回上映</a>
+    <a href="#flow">上映後の対話</a>
+    <a href="#archive">これまで</a>
+    <a href="#access">アクセス</a>
+  </div>
+  <a class="nav-cta" href="#next">チケット申込</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="ヒーロー">
+  <div class="hero-veil"></div>
+  <div class="hero-beam"></div>
+
+  <div class="hero-inner">
+    <p class="hero-kicker">ちよだプラットフォームスクウェア<br>月イチ上映会</p>
+
+    <h1 class="hero-title">
+      <span class="line">映画を、</span>
+      <span class="line">思考の始まりに。</span>
+    </h1>
+
+    <p class="hero-sub">
+      むずかしく考えなくて大丈夫。月に一度、一本の映画を入り口に、<br>
+      隔り合った人とゆるやかに語り合う夜です。はじめてでも、ひとりでも、どうぞ気軽に。
+    </p>
+
+    <div class="hero-ctas">
+      <a class="btn btn-red" href="#next">次回の上映を見る <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#about">神田シネマとは <span class="arr">→</span></a>
+    </div>
+
+    <div class="hero-meta">
+      <span><em>会場</em>ちよだプラットフォームスクウェア／会議室</span>
+      <span class="dot">●</span>
+      <span><em>頻度</em>毎月 1 回</span>
+      <span class="dot">●</span>
+      <span><em>上映後</em>学生ファシリテーターと対話</span>
+    </div>
+  </div>
+
+  <aside class="hero-ribbon">
+    <span class="num">第<b>5</b>回</span>
+    <span class="rib-label">上映決定</span>
+  </aside>
+</header>
+
+<div class="filmstrip"></div>
+
+<!-- ============ ABOUT / CONCEPT ============ -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-head">
+      <p class="eyebrow">About 神田シネマ</p>
+      <h2 class="about-title">映画館では出会えない一本を、<br>社会と出会う夜に。</h2>
+    </div>
+    <div class="about-body">
+      <p>
+        『神田シネマ』は、ちよだプラットフォームスクウェアの会議室を会場に、
+        <b>社会問題を考えるきっかけになる映画</b>を上映する小さな映画会です。
+        大きな映画館ではなかなかかからない作品をピックアップし、月に一度お届けします。
+      </p>
+      <p>
+        スクリーンの灯が消えたあとが、神田シネマの本番です。
+        映画監督を目指す学生がファシリテーターとなり、観たばかりの一本をめぐって語り合う。
+        社会問題への気づきを持ち帰り、<b>行動へつなげる</b>——そんな時間を目指しています。
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap pillars">
+    <article class="pillar">
+      <span class="p-num">01</span>
+      <h3>月イチで、一本だけ</h3>
+      <p>話題作の陰に埋もれがちな、けれど確かに観るべき一本を厳選。多くは上映機会の少ないドキュメンタリーです。</p>
+    </article>
+    <article class="pillar">
+      <span class="p-num">02</span>
+      <h3>社会問題と出会う</h3>
+      <p>貧困、紛争、ジェンダー、環境——遠い世界の話に思える主題を、一本の映画を通して自分ごとに引き寄せます。</p>
+    </article>
+    <article class="pillar">
+      <span class="p-num">03</span>
+      <h3>観て、話して、持ち帰る</h3>
+      <p>上映後は学生ファシリテーターと車座でひとこと。うまく話せなくても大丈夫。気づきをひとつ持ち帰れたら、それで十分です。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ NEXT SCREENING ============ -->
+<section class="next" id="next" data-screen-label="次回上映">
+  <div class="wrap next-top">
+    <p class="eyebrow">Next Screening</p>
+    <div class="next-no"><span>第</span><b>5</b><span>回</span></div>
+  </div>
+
+  <div class="wrap next-grid">
+    <!-- poster -->
+    <div class="poster-col">
+      <div class="poster-frame">
+        <image-slot id="poster-05" class="poster-slot" shape="rect" fit="contain"
+          placeholder="第5回 ポスター画像をドロップ"></image-slot>
+        <div class="poster-perf left"></div>
+        <div class="poster-perf right"></div>
+      </div>
+    </div>
+
+    <!-- detail -->
+    <div class="next-detail">
+      <p class="film-genre">ドキュメンタリー｜2015年｜ベルギー＝フランス</p>
+      <h2 class="film-title">女を修理する男</h2>
+      <p class="film-orig">L'homme qui répare les femmes</p>
+
+      <p class="film-lead">
+        紛争下のコンゴ民主共和国で、性暴力に傷ついた女性たちを治療しつづける
+        婦人科医デニ・ムクウェゲ。命を狙われてなお声を上げ続けた医師の闘いを追い、
+        「沈黙させられてきた痛み」と私たちのつながりを問うドキュメンタリー。
+      </p>
+
+      <ul class="film-tags">
+        <li>ジェンダー</li><li>紛争と人権</li><li>SDGs</li><li>性教育</li>
+      </ul>
+
+      <dl class="film-info">
+        <div><dt>日　時</dt><dd>2026.06.30（火）　開演 18:30 START</dd></div>
+        <div><dt>会　場</dt><dd>ちよだプラットフォームスクウェア　会議室<br><span class="muted">東京都千代田区神田錦町 3-21</span></dd></div>
+        <div><dt>料　金</dt><dd>一律 ¥1,000（要事前申込）</dd></div>
+        <div><dt>上映後</dt><dd>学生ファシリテーターによるアフタートーク（自由参加）</dd></div>
+      </dl>
+
+      <div class="next-ctas">
+        <a class="btn btn-red" href="https://kandacinema005.peatix.com/view" target="_blank" rel="noopener">Peatix で申し込む <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#access">会場アクセス <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOW (after screening) ============ -->
+<section class="flow" id="flow">
+  <div class="wrap">
+    <div class="flow-head">
+      <p class="eyebrow cream">After the Film</p>
+      <h2>灯が消えてからが、<br class="sp">神田シネマ。</h2>
+      <p class="flow-intro">
+        映画はきっかけ。正解を出す場ではありません。映画監督を志す学生が進行役なので、
+        かまえずに、思ったことをぽつりと話せます。聞くだけの参加も大歓迎です。
+      </p>
+    </div>
+
+    <ol class="steps timeline">
+      <li class="tstep">
+        <div class="tnode"><span class="tnum">1</span></div>
+        <h3>観る</h3>
+        <p>選び抜いた一本を、暗がりの中でじっくりと。まずは作品の世界に浸ります。</p>
+      </li>
+      <li class="tstep">
+        <div class="tnode"><span class="tnum">2</span></div>
+        <h3>ほぐす</h3>
+        <p>学生ファシリテーターが進行。感想に正解はありません。小さな違和感も歓迎です。</p>
+      </li>
+      <li class="tstep">
+        <div class="tnode"><span class="tnum">3</span></div>
+        <h3>語り合う</h3>
+        <p>「自分だったら」を持ち寄り、社会問題への気づきを互いの言葉で深めていきます。</p>
+      </li>
+      <li class="tstep">
+        <div class="tnode"><span class="tnum">4</span></div>
+        <h3>持ち帰る</h3>
+        <p>「ちょっと調べてみよう」くらいで十分。気づきをひとつ持ち帰れたら、それが神田シネマのゴールです。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ARCHIVE ============ -->
+<section class="archive" id="archive" data-screen-label="これまでの上映">
+  <div class="wrap arch-head">
+    <div>
+      <p class="eyebrow">Past Screenings</p>
+      <h2>これまでの上映</h2>
+    </div>
+    <p class="arch-note">毎月、社会の片隅にある問いを一本ずつ。<br>これまでに上映した作品の一部をご紹介します。</p>
+  </div>
+
+  <div class="wrap arch-grid">
+    <article class="arch-card">
+      <div class="arch-poster"><image-slot id="poster-01" shape="rect" fit="contain" placeholder="第1回 ポスター"></image-slot></div>
+      <span class="arch-no">第 1 回</span>
+      <h3>1日1ドルで生活</h3>
+      <p class="arch-meta">貧困・国際協力</p>
+      <p class="arch-desc">米国の若者4人が、中米グアテマラの農村で「1日1ドル」56日間の暮らしに挑む。</p>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-poster"><image-slot id="poster-02" shape="rect" fit="contain" placeholder="第2回 ポスター"></image-slot></div>
+      <span class="arch-no">第 2 回</span>
+      <h3>もったいないキッチン</h3>
+      <p class="arch-meta">フードロス・SDGs</p>
+      <p class="arch-desc">捨てられるはずだった食材を積んで、旅しながら料理する。日本のフードロスに向き合うロードムービー。</p>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-poster"><image-slot id="poster-03" shape="rect" fit="contain" placeholder="第3回 ポスター"></image-slot></div>
+      <span class="arch-no">第 3 回</span>
+      <h3>私は憎まない</h3>
+      <p class="arch-meta">中東・平和</p>
+      <p class="arch-desc">空爆で娘たちを失ったガザの医師。それでも憎しみではなく、対話と希望を選んだ人の記録。</p>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-poster"><image-slot id="poster-04" shape="rect" fit="contain" placeholder="第4回 ポスター"></image-slot></div>
+      <span class="arch-no">第 4 回</span>
+      <h3>バベルの学校</h3>
+      <p class="arch-meta">教育・移民</p>
+      <p class="arch-desc">世界各国からパリにやってきた移民の子どもたち。言葉も文化も違う適応クラスの1年を追う。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ACCESS ============ -->
+<section class="access" id="access" data-screen-label="アクセス">
+  <div class="wrap access-grid">
+    <div class="access-info">
+      <p class="eyebrow">Access</p>
+      <h2>会場</h2>
+      <p class="venue-name">ちよだプラットフォームスクウェア</p>
+      <p class="venue-addr">〒101-0054　東京都千代田区神田錦町 3-21</p>
+      <dl class="access-list">
+        <div><dt>都営新宿線</dt><dd>「小川町」駅　A5出口 徒歩 3 分</dd></div>
+        <div><dt>東京メトロ</dt><dd>丸ノ内線「淡路町」／千代田線「新御茶ノ水」 徒歩 5 分</dd></div>
+        <div><dt>半蔵門線・都営線</dt><dd>「神保町」駅 徒歩 7 分</dd></div>
+      </dl>
+    </div>
+    <div class="access-map">
+      <iframe class="map-frame" src="https://www.google.com/maps?q=ちよだプラットフォームスクウェア&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ちよだプラットフォームスクウェア 地図"></iframe>
+      <span class="map-cap">MAP — ちよだプラットフォームスクウェア</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN / CTA ============ -->
+<section class="join" id="join">
+  <div class="wrap join-inner">
+    <p class="eyebrow">Join Us</p>
+    <h2 class="join-title">次の上映で、お会いしましょう。</h2>
+    <p class="join-sub">はじめての方も、おひとりでも大歓迎。席数にかぎりがあるので、Peatix からの事前申込が安心です。</p>
+    <div class="join-ctas">
+      <a class="btn btn-red" href="https://kandacinema005.peatix.com/view" target="_blank" rel="noopener">第5回を申し込む <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand">
+        <img class="brand-logo foot-brand-logo" src="assets/kanda-cinema-logo-cream.png" alt="神田シネマ KANDA CINEMA">
+      </span>
+      <p>映画を、思考の始まりに。<br>ちよだプラットフォームスクウェアの月イチ上映会。</p>
+      <div class="foot-social">
+        <a href="https://x.com/kandacinema_lab" target="_blank" rel="noopener">X</a>
+        <a href="https://www.instagram.com/kandacinema_lab/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://note.com/honest_pika3270" target="_blank" rel="noopener">note</a>
+      </div>
+    </div>
+    <nav class="foot-links">
+      <a href="#about">上映について</a>
+      <a href="#next">次回上映</a>
+      <a href="#flow">上映後の対話</a>
+      <a href="#archive">これまで</a>
+      <a href="#access">アクセス</a>
+    </nav>
+  </div>
+  <div class="foot-base wrap">
+    <small>© 2026 神田シネマ KANDA CINEMA</small>
+    <small>主催：神田シネマ ／ プラットフォームサービス株式会社</small>
+  </div>
+</footer>
+
+<script>
+  // nav background on scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('solid', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+</script>
+</body>
+</html>
