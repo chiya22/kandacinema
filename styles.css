@@ -147,7 +147,8 @@ h1,h2,h3{font-family:var(--mincho);font-weight:600;line-height:1.28;letter-spaci
   background:var(--red);transition:.2s;
 }
 .nav-cta:hover{background:transparent;color:var(--red)}
-@media(max-width:860px){.navlinks{display:none}}
+@media(max-width:1040px){.navlinks{gap:20px}.navlinks a{font-size:13px}}
+@media(max-width:940px){.navlinks{display:none}}
 
 /* ============ buttons ============ */
 .btn{

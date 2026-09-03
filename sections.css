@@ -148,7 +148,7 @@
 .up-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:50px;flex-wrap:wrap}
 .up-head h2{font-size:clamp(28px,3.4vw,44px);margin-top:16px;color:var(--cream)}
 .up-note{font-size:14px;line-height:1.95;color:var(--cream-dim);text-align:right}
-.up-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.up-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:34px}
 .up-card{display:grid;grid-template-columns:150px 1fr;gap:26px;padding:26px;background:var(--ink-3);border:1px solid var(--line);align-items:start}
 .up-poster{background:#0d0b08;border:1px solid var(--line);padding:6px}
 .up-poster image-slot{width:100%;height:auto;aspect-ratio:339/480;background:#100d0a;color:var(--cream-dim)}
