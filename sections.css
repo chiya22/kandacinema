@@ -42,6 +42,8 @@
 }
 .hero-title .line{display:block}
 .hero-title .line:last-child{color:var(--amber)}
+/* 末尾句読点の視覚幅を相殺し、文字が光学的に中央に来るようにする */
+.hero-title .punct-balance{visibility:hidden}
 .hero-sub{
   margin-top:34px;font-size:clamp(15px,1.5vw,18px);
   line-height:2.1;color:#ffffff;letter-spacing:.05em;
